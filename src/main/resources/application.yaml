@@ -1,0 +1,19 @@
+server:
+  port: 9001
+
+spring:
+# RSocket config
+  rsocket:
+    server:
+      mapping-path: /rsocket
+      transport: websocket
+
+# mongoDB config
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      authentication-database: admin
+      username: test
+      password: test
+      database: test

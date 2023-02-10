@@ -2,14 +2,15 @@ package com.rostami.reactiveexample.domain;
 
 import lombok.*;
 
-@Getter
-@Setter
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @ToString
-public class Person {
-    private Integer id;
-    private String firstName;
-    private String lastName;
+@Getter
+@Setter
+public class MovieEvent {
+    private String movieId;
+    private Date movieDate;
 }
